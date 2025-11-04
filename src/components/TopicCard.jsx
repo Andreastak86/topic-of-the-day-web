@@ -1,4 +1,3 @@
-// components/TopicCard.jsx
 import Link from "next/link"
 
 export default function TopicCard({ topic }) {
@@ -12,12 +11,12 @@ export default function TopicCard({ topic }) {
     >
       {topic.cover?.url ? (
         <div className="aspect-[16/10] overflow-hidden bg-neutral-100">
-          <img
-            src={topic.cover.url}
-            alt={topic.cover.alt || topic.title}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-            loading="lazy"
-          />
+   <img
+  src={topic.cover.url}
+  alt={topic.cover.alt || topic.title}
+  className="h-full w-full object-contain bg-neutral-100 p-2"
+  loading="lazy"
+/>
         </div>
       ) : (
         <div className="aspect-[16/10] bg-neutral-100" />
@@ -51,7 +50,6 @@ export default function TopicCard({ topic }) {
         ) : null}
       </div>
 
-      {/* Subtil highlight på hover */}
       <div className="pointer-events-none absolute inset-0 rounded-2xl ring-0 ring-neutral-200 transition group-hover:ring-2" />
     </Link>
   )

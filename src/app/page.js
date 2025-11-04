@@ -18,7 +18,7 @@ export default async function Home() {
       <header className="mb-6">
         <h1 className="text-3xl font-bold tracking-tight">Dagens Topic</h1>
         <p className="mt-1 text-neutral-600">
-          {format(now, "MMMM yyyy")} – kuratert kunnskap, én dag av gangen.
+          {format(now, "MMMM yyyy")} – nyttig kunnskap, én dag av gangen.
         </p>
       </header>
 
